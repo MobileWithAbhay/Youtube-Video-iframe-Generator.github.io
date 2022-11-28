@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="from">
+      <h1>Youtube Video iframe Generator</h1>
+        <input type="text" class="link url" placeholder="Enter Your YouTube Video Link..." />
+     <!---Width and Height text--->
+      <div class="whh">
+         <h1 class="w">Width</h1>
+         <h1 class="h">Height</h1>
+      </div>
+     <!---Width and Height box--->
+      <div class="WH">
+         <input type="number" class="width" value="560">
+         <input type="number" class=" height" value="315">
+      </div>
+      <!---FrameBorder box--->
+      <h1 class="F">FrameBorder</h1>
+        <input type="number" class="link frameborder" value="0" />
+     <button class="Get" onclick="iframe()">Generate</button><br/>
+      <div class="hidden1">
+         <h1>Preview iframe Video</h1><br/>
+         <div class="preview"></div>
+         <textarea class="result" hidden></textarea>
+         <button class="Get" onclick="ClipboardLink()">Copy Code</button>
+      </div>
+   </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
